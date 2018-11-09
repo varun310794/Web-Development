@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script>
+			function validate(){
+				var valid=false;
+				var x=document.myForm.paymentmethod;
+				
+				for(var i=0; i<x.length; i++){					
+					if(x[i].checked){
+						valid=true;
+						break;
+					}
+				}
+				
+				if(valid){
+					alert("Payment method succesfully selected");
+					return true;
+				}else{
+					alert("Please select a method of payment");
+					return false;
+				}				
+		  	}
+		</script>  
+	</head>
+	
+	<body>
+		<form name="myForm" action="register.jsp" onsubmit="return validate()">
+			<input type="radio" name="paymentmethod" value="COD">COD<br/>
+            <input type="radio" name="paymentmethod" value="CC">CC<br/>
+			<input type="radio" name="paymentmethod" value="DC">DC<br/>
+			
+			<input type="submit" value="submit">
+		</form>
+	</body>
+ </html>

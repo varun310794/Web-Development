@@ -1,0 +1,51 @@
+table{
+	background:white;
+	align:center;
+	margin:auto;
+}
+	
+td{
+	
+	width:100px;
+    height:100px;
+	
+		
+}
+.vertical{
+	border-left:1px solid black;
+	border-right:1px solid black;
+	background:yellow;
+	
+}
+
+.horizontal{
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	background:yellow;
+}
+
+#allsides{
+	border:1px solid black;
+	background:black;
+	
+	
+}
+
+.black{
+	background:black;
+}
+
+p{
+	font-family:arial;
+	font-size:50px;
+	text-align:center;
+}
+
+
+
+/*tr:nth of type(1) td:nth of type(1){
+	border-width:10px;
+	border-height:10px;
+	border-top: 0px white;
+	border-right:  2px dashed #f0F;
+}

@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<script>
+			function validate(){
+				var color=false;
+				if(document.getElementById("blue").checked){
+					color=true;
+				}else if(document.getElementById("red").checked){
+					color=true;
+				}else if(document.getElementById("yellow").checked){
+					color=true;
+				}else if(document.getElementById("brown").checked){
+					color=true;
+				}else{
+					color=false;
+				}
+				if(color){
+					alert("Color succesfully registered");
+					return true;
+				}else{
+					alert("Please select a color");
+					return false;
+				}	
+			
+			}
+			
+		</script>  
+	</head>
+	
+	<body>
+		<form name="myForm" action="register.jsp" onsubmit="return validate()">
+			<input type="checkbox" id="blue" value="blue">blue<br/>
+            <input type="checkbox" id="red" value="red">red<br/>
+			<input type="checkbox" id="yellow" value="yellow">yellow<br/>
+			<input type="checkbox" id="brown" value="brown">brown<br/>
+			<input type="submit" value="submit">
+			
+				
+		</form>
+	</body>
+ </html>

@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script>
+			function validate(){
+				var exp=/^[A-Za-z0-9\s]{3-10}$/;
+				var username=document.myForm.Address.value;
+				var result=exp.test(username);				
+				
+				if(result){
+					alert("validation succesfull");
+				}
+				else{
+					document.getElementById("error info").innerHTML="Please enter alpha numeric values only";
+					return false;
+					document.myForm.Address.focus();
+				}
+		  	}
+		</script>  
+	</head>
+	
+	<body>
+		<form name="myForm" action="register.jsp" onsubmit="return validate()">
+			Address: <textarea type="text" name="Address"></textarea>
+			
+              
+			<input type="submit" value="submit"><br/>
+			<b id="error info"></b>
+		</form>
+	</body>
+ </html>

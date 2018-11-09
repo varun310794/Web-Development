@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Galleria de kingsville</title>
+	<link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+</head>
+
+<body>
+	<div class="row">
+		<div class="column">
+			<h1>Purfect Match</h1>
+			<p>A perfect place to find your life partner</p>
+			<hr>
+			<button class="btn btn-primary">Sign up</button>
+		</div>
+	
+	</div>
+</body>
+
+</html>

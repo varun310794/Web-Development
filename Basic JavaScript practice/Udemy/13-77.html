@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script>
+			function validate(){
+				var no=document.myForm.number1.value;
+				
+				if(isNaN(no) || no<1 || no>10){
+					alert("Enter a number from 1 to 10");
+					document.myForm.number1.focus();
+					return false;
+				}else{
+					alert("Registered succesfully")
+					return true;
+				}
+			
+			
+			}
+			
+		</script>  
+	</head>
+	
+	<body>
+		<form name="myForm" action="register.jsp" onsubmit="return validate()">
+			Enter a number from 1 to 10: <input type="text" name="number1"><br/><br/>
+			<input type="submit" value="register">
+			
+		</form>
+	</body>
+ </html>

@@ -1,0 +1,28 @@
+body{
+	border:10px solid grey;
+	margin:10%;
+}
+div{
+	padding-left:3%;
+	padding-right:3%;
+	text-align:left;
+}
+.sh{
+	color:grey;
+	width:30%;
+	font-family:Oswald;
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
+
+.sub{
+	font-family:arial;
+	font-size:25px;
+	color:red;
+}
+
+.border{
+	padding:0 0 0 8px;;
+	border-left:10px solid grey;
+	
+}

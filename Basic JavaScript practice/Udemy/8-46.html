@@ -1,0 +1,19 @@
+<html>
+<head>
+<script> 
+function handleonchangeevent(x){
+window.location=x;
+}
+
+</script>
+</head>
+
+<body>
+	<select onchange="handleonchangeevent(this.value)">
+		<option value="">Select a website</option>
+		<option value="http://www.google.com">google</option>
+		<option value="http://www.amazon.com">amazon</option>
+		<option value="http://www.flipkart.com">flipkart</option>
+	</select>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h1 id="edit">This is a dog webpage</h1>
+		<h2>Dogs are beatiful living creatures</h2>
+
+		<img id="cut" src="Webp.net-resizeimage (2).jpg"/><br/>
+		<a href="https://www.google.com/search?q=dog+pictures&rlz=1C1CHBF_enUS800US800&tbm=isch&source=iu&ictx=1&fir=3QCOYtCXcyPx1M%253A%252CKsJYrmMqZTl1fM%252C_&usg=AFrqEzcSFZ3f2ZEl1kAElvpLgT5xe_94vQ&sa=X&ved=2ahUKEwi337iYkL7dAhUimuAKHWGGD38Q9QEwAnoECAQQCA#imgrc=_">Links for few more dog pictures</a>
+		<p>iuhfjnvjhfngsnanv  jhndfknfgjkhgfnmfkfffjtjf jkhfkjfjdhfJFALFG.GBKRG.DKJGFNFLTwfl.jgbk.udvhbf ufkujlhjaht;iojrhg;ojnhtehgjrthio'gfh;hl;gsp;aljbjgfhbgjdnh;gdivh</p>
+		<ul>
+		<li><a href="#">kdbchjbdsscc</a></li>
+		<li><a href="#">kdbchjbdsscc</a></li>
+		<li><a href="#">kdbchjbdsscc</a></li>
+		</ul>
+		
+		<ul>
+		<li><a href="#">nvmnfvmnfv</a></li>
+		<li><a href="#">nvmnfvmnfv</a></li>
+		<li><a href="#">nvmnfvmnfv</a></li>
+		</ul>
+		<script>
+			var img=document.getElementById("cut");
+			img.style.width="300px";
+			img.style.height="200px";
+			img.addEventListener("click",function(){
+			this.style.border="5px solid red";});
+				
+			var h1=document.getElementById("edit");
+			h1.addEventListener("click",function(){
+			alert("you clicked h1");
+			this.style.background="yellow";
+			})	
+			/*
+			var lis=document.querySelectorAll("li")[0];
+			lis.addEventListener("click", function(){
+			this.style.background="yellow";
+			})
+			
+			var lis=document.querySelectorAll("li")[1];
+			lis.addEventListener("click", function(){
+			this.style.background="yellow";
+			})
+			
+			var lis=document.querySelectorAll("li")[2];
+			lis.addEventListener("click", function(){
+			this.style.background="yellow";
+			})
+			*/
+			var lis1=document.querySelectorAll("li a");
+			for(i=0;i<lis1.length;i++){
+				lis1[i].addEventListener("click", function(){
+				this.style.background="yellow";
+				})
+			}
+			
+		</script>
+	</body>
+</html>

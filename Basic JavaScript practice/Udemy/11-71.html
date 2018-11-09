@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<script>
+			function remove() {
+				var parent=document.getElementById("div1");
+				var child=document.getElementById("p2");
+				if (child != null) {
+					parent.removeChild(child);
+				} else {
+					alert("There are no more elements with id=p2");
+				}
+			}
+		
+			function create() {
+				var parent=document.getElementById("div1");
+				var child=document.createElement("p");
+				child.setAttribute("id", "p2");
+				var text=document.createTextNode("Gunna Gunna maamidi");
+				child.appendChild(text);
+				parent.appendChild(child);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			<p id="p1">Why this kolaveri koleveri kolaveri di</p>
+			<p id="p2">Inkem inkem inkem kaavale</p>
+		</div>
+	
+		<input type="button" value="remove" onclick="remove()">
+		<input type="button" value="create" onclick="create()">
+	</body>
+</html>

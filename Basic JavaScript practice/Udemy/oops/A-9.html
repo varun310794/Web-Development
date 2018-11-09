@@ -1,0 +1,75 @@
+<html>
+<head>
+	<script>
+		function validate(){
+			var email = document.myform.email.value;
+			var phone = document.myform.phone.value;
+			var password = document.myform.password.value;
+			if(email==""){
+				alert("Email is mandatory");
+				document.myform.email.focus();
+				return false;
+			}
+			if(password==""){
+				
+				alert("Password is mandatory");
+				document.myform.password.focus();
+				return false;
+			}
+			if(phone==""){
+				alert("Phone is mandatory");
+				document.myform.phone.focus();
+				return false;
+			}
+
+			var exp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+			var result = exp.test(email)
+			if (!result)  
+  			{		  
+				alert("Please enter a valid password");
+  				document.myform.email.focus();
+    			return false;
+  			} 
+			
+			
+			exp = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+			result = exp.test(phone);
+			if(!result){
+				alert("Please enter a valid phone number");
+				document.myform.phone.focus();
+				return false;
+			}
+			
+			exp = /^[A-Za-z0-9\s]{5,8}$/;
+			result = exp.test(password);
+			if(!result){
+				alert("Please enter a valid password");
+				document.myform.password.focus();
+				return false;
+			}
+
+			
+			
+
+			alert("Successfull registered")
+				return true;
+
+		}
+		
+	</script>
+	</head>
+
+	<body>
+
+
+	<form name="myform" action="registration.jsp" onsubmit="return validate()">
+		email: <input type="text" name="email"/><br/><br/>
+		phone: <input type="phone" name="phone"/><br/><br/>
+		password: <input type="password" name="password"/><br/><br/>
+		<input type="submit" value="submit"/><br/><br/>
+	</form>
+
+	
+	</body>
+
+</html>

@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<title>Score keeper</title>
+		<style type="text/css">
+			.noColor{
+				color:green;
+			}
+		</style>
+	</head>
+	<body>
+		<h1><span id="span1">0</span> to <span id="span2">0</span></h1>
+		<h3>Playing to:<span id="span3">5</span></h3>
+		<input id="input1" type="number">
+		<button id="one">Player One</button>
+		<button id="two">Player Two</button>
+		<button id="three">Reset</button>
+		
+
+		<script>
+			var dws=document.getElementById("span3");
+			var input=document.getElementById("input1");
+			var playerOne=document.getElementById("one");
+			var playerTwo=document.getElementById("two");
+			var sOne=document.getElementById("span1");
+			var sTwo=document.getElementById("span2");
+			var reset=document.getElementById("three");
+			var dgo=document.getElementById("go");
+			var pOneScore=0;
+			var pTwoScore=0;
+			var winningScore=5;
+			var gameOver=false;
+
+			
+			playerOne.addEventListener("click", function(){
+				if(!input.disabled) {
+					input.disabled = true;
+				}
+				if(!gameOver){
+					pOneScore=pOneScore+1;
+					if(pOneScore===winningScore){
+						sOne.classList.add("noColor");
+						gameOver=true;
+					}
+					sOne.textContent=pOneScore;
+					
+				} else if(gameOver){
+					alert("Game is over, please click reset and play again!");
+				}
+				
+			});
+			
+			playerTwo.addEventListener("click", function(){
+				if(!input.disabled) {
+					input.disabled = true;
+				}
+				if(!gameOver){
+					pTwoScore=pTwoScore+1;
+					if(pTwoScore===winningScore){
+						sTwo.classList.add("noColor");
+						gameOver=true;
+					}
+					sTwo.textContent=pTwoScore;
+					
+				} else if(gameOver){
+					alert("Game is over, please click reset and play again!");
+				}
+			});
+			
+			reset.addEventListener("click", function(){
+				pOneScore=0;
+				pTwoScore=0;
+				sOne.textContent=pOneScore;
+				sTwo.textContent=pTwoScore;
+				sOne.classList.remove("noColor");
+				sTwo.classList.remove("noColor");
+				gameOver=false;
+				input.disabled = false;
+				input.value="";
+			});
+			
+			input.addEventListener("change", function(){
+				dws.textContent=input.value;
+				winningScore=Number(input.value);
+			});
+			
+			function displayAlert(){
+				
+				
+				
+			}
+		</script>
+	</body>
+</html>

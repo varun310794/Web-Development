@@ -1,0 +1,21 @@
+<html>
+<head>
+<script> 
+	var x=2;
+
+	function fun1() {
+		var y=3;
+		function fun2(){
+			var z=4;
+			var q=x+y+z;
+			return q;
+		}
+		
+		return fun2();
+	}
+	
+	var result = fun1();
+	document.write(result);
+</script>
+</head>
+</html>

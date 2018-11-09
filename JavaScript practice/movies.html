@@ -1,0 +1,45 @@
+<html>
+<head></head>
+<body>
+<script>
+
+var movies=[
+	{
+		movie: "manu",
+		haveWatched: false,
+		rating: 4
+	},
+	
+	{
+		movie: "co kancherapalem",
+		haveWatched: true,
+		rating: 5
+	},
+	
+	{
+		movie:"silly fellows",
+		haveWatched: false,
+		rating: 3
+	}
+
+]
+
+
+for(i=0;i<movies.length;i++){
+	
+	if(movies[i].haveWatched){
+		document.write("I have watched "+movies[i].movie+" and the rating is : "+movies[i].rating+"<br/>"); 
+	}else{
+		document.write("I have not watched "+movies[i].movie+" and the rating is : "+movies[i].rating+"<br/>");
+	}
+	
+	}
+
+
+</script>
+</body>
+
+</html>
+
+
+

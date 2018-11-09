@@ -1,0 +1,27 @@
+<html>
+  <head>
+   <script>
+		function someRandomFunction(){
+			document.getElementById("random").addEventListener("click",someRandomFunction2);
+			
+			function someRandomFunction2(){
+				alert("Click event");
+			}	
+		
+		}
+
+		window.addEventListener("load",someRandomFunction);		
+			
+			
+   </script>
+  
+  </head>
+	
+	<input type="button" value="click me" id="random">
+  
+  <body>
+	
+  
+  </body>
+
+ </html>

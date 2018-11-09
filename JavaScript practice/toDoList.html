@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script>
+			<!--this page is becoming unresponsive after you spend some time with the app-->
+			var list = ["kaana","peena","sona"];
+
+			var x=prompt("What would you like to do ?");
+
+			while(x !== "quit") {
+				if(x === "list") {
+					alert(list);
+					var x=prompt("What would would you like to do ?");
+				} else if(x==="add") {
+					var y=prompt("What would you like to add ?");
+					list.push(y);
+					alert("Your to do list has been updated. Here is the list: "+list);
+					var x=prompt("What would would you like to do ?");
+				} else if(x==="delete") {
+					var z=prompt("Enter the index of of the item");
+					delete list[z];
+					alert("The item with index "+z+" is deleted");
+					var x =prompt("What would would you like to do ?");
+				} else {
+					alert("Please enter an appropriate command");
+					var x=prompt("What would you like to do ?");
+				}
+			}
+			if(x==="quit"){
+				alert("Thanks for trying out the app.")
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

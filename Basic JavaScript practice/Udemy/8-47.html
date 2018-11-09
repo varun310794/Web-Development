@@ -1,0 +1,19 @@
+<html>
+<head>
+<script> 
+function handleonchangeevent(x){
+document.body.style.backgroundImage = "url('"+x+"')";
+}
+
+</script>
+</head>
+
+<body>
+	<select onchange="handleonchangeevent(this.value)">
+		<option value="">Select an image</option>
+		<option value="walterwhite.jpg">breaking bad</option>
+		<option value="The-Walking-Dead-Season-8-Poster.jpg">walking dead</option>
+		<option value="23-years-of-friends.jpg">friends</option>
+	</select>
+</body>
+</html>

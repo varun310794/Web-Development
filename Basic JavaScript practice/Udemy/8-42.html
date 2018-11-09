@@ -1,0 +1,25 @@
+<html>
+<head>
+<script> 
+
+function handleEventMouseOver(x){
+	x.style.color="red";
+	x.style.backgroundColor="yellow";
+	x.innerHTML="MOUSEOVER";
+	return handleEventMouseOver();
+	}
+	
+function handleEventMouseOut(y){
+	y.style.color="black";
+	y.style.backgroundColor="white";
+	y.innerHTML="Click this button";
+	return handleEventMouseOut();
+	}
+</script>
+<body>
+	<p onmouseover="handleEventMouseOver(this)"
+	onmouseout="handleEventMouseOut(this)">Click this button</p>
+
+</body>
+</head>
+</html>

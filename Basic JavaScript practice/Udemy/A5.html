@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+
+function gradeCalculator(){ 
+
+var x=parseInt(prompt("Enter the grade in maths"));
+
+var y=parseInt(prompt("Enter the grade in Physics"));
+
+var z=parseInt(prompt("Enter the grade in Chemistry"));
+
+
+
+var total=x+y+z;
+var avg=total/3;
+document.write("The average is:"+avg+"<br/>");
+
+
+
+if(avg<70){
+document.write("You scored a C grade"+ "<br/>");
+} 
+else if(avg>=70 && avg<90){
+document.write("You scored a B grade"+ "<br/>");
+}
+else{
+document.write("You scored an A grade");
+}
+}
+
+gradeCalculator();
+
+</script>
+</head>
+</html>

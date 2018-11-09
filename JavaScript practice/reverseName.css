@@ -1,0 +1,55 @@
+#container{
+	margin:50 auto;
+	text-align:center;
+}
+#container2 {
+	margin:50 auto;
+	text-align:center;
+}
+	
+h1{
+	text-align:center;
+	
+	color:grey;
+}
+body{
+	background:url(ycEHYjA.jpg);
+	background-size:100%;
+}
+.toggleH1{
+	color:silver;
+}
+#submitButton:hover{
+	background:grey;
+}
+#submitButton{
+	border:0;
+}
+h4{
+	color:grey;
+	text-align:center;	
+}
+
+p{
+	color:grey;
+	text-align:center;
+	margin:10 auto;
+	height:1%;
+
+}
+
+#resetButton:hover{
+	background:grey;
+}
+#resetButton{
+	border:0;
+}
+
+body{
+	font-family:calibri;
+}
+
+#container1{
+	margin:0 auto;
+}
+

@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>Reverse your name</title>
+		<link rel="stylesheet" href="reverseName.css" type="text/css">
+	</head>
+<body>
+	<div id="container1">
+		<h1 id="nameH1">Name Reversifier</h1>	
+		<h4>Type your name in the box below and click submit, we will reversify your name for you.</h4>
+	</div>
+	<p id="main"/>
+	<form id="container">
+		<input type="text" id="textInput" class="inp">
+		
+	</form>
+	<div id="container2">
+		<button id="submitButton">Submit!</button>
+		<button id="resetButton">Reset</button>
+	</div>
+
+	<script>
+		var ans="";
+		//var gameOver=false;
+		var y=document.getElementById("main");
+		var x=document.getElementById("nameH1");
+		setInterval(repeatH1,100);
+		function repeatH1(){
+			x.classList.toggle("toggleH1");
+		}
+
+		var rButton=document.getElementById("resetButton");
+		var input=document.getElementById("textInput")
+		var sButton=document.getElementById("submitButton");
+		sButton.addEventListener("click",function(){
+
+			//if(!gameOver){
+				if(input.value===""){
+					alert("Please enter a valid name");
+					y.innerHTML="";
+					//gameOver=false;
+				}else{
+					for(var i=input.value.length-1;i>-1;i--){
+					ans=ans+input.value[i];		
+					}
+					y.innerHTML=("You are called " +ans+ " in this reverse world");
+					//gameOver=true;
+					ans="";
+				}	
+				/*}else if(gameOver){
+				alert("Please click reset");
+
+			}*/
+		});
+
+		rButton.addEventListener("click", function() {
+			//var inputText=document.getElementById("textInput");
+			y.innerHTML="";
+			ans="";
+			//inputText.value = "";
+			document.getElementById("container").reset();
+		});
+	</script>
+</body>
+</html>

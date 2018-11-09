@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Register Page</title>
+</head>
+	<body>
+		<form>
+			First name name:<input type="text" placeholder="First name" >
+			Last name:<input type="text" placeholder="Last name" ><br/>
+			Male:<input type="raido" name="Gender" value ="male">
+			Female:<input type="radio" name="Gender" value="Female"><br/>
+			Other:<input type="radio" name="Gender" value="other"><br/>
+
+			Email:<input type="email" placeholder="Email" required>
+			Password:<input type="password" placeholder="password" required><br/>
+			Birthday:
+			<select name="month">
+			<option>Month</option>
+			<option>January</option>
+			<option>February</option>
+			</select>
+			<select name="Day">
+			<option>Day</option>
+			<option>2</option>
+			<option>3</option>
+			</select>
+			<select name="Year">
+			<option>Year</option>
+			<option>2017</option>
+			<option>2018</option>
+			</select><br/>
+			I agree to the terms and conditions<input type="checkbox" name="Agreement">
+		</form>
+	</body>
+
+</html>

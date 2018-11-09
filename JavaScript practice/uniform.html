@@ -1,0 +1,26 @@
+<html>
+
+	<head>
+	<script>
+		function uniform(x){
+			var first=x[0];
+			for(i=1; i<x.length; i++){
+				if(x[i]!==x[0]){
+					return false;
+				}
+			}
+		return true;
+		}
+		
+		
+		document.write("Is this uniformuniform"([1,1,1,1,1,1,2]));
+		document.write(uniform([1,2,1,1,1,1,1]));
+		document.write(uniform([1,1,1,1,1,1,1]));
+	</script>
+	</head>
+
+	<body>
+
+	</body>
+
+</html>

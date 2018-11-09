@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script>
+			function factorial(num) {
+				for(i=num; i>1;i--) {
+					num=num*(i-1);
+				}
+				return num;				
+			}
+			
+			function factorialNew(val) {
+				var returnValue = 1;
+				for(i=val; i >=2;i--) {
+					returnValue*=i;
+				}
+				return returnValue;				
+			}
+			
+			alert("6 Factorial "+factorialNew(6));
+			alert("7 Factorial "+factorialNew(7));
+			alert("8 Factorial "+factorialNew(8));
+			alert("9 Factorial "+factorialNew(9));
+			alert("10 Factorial "+factorialNew(10));
+			alert("0 Factorial "+factorialNew(0));
+			alert("1 Factorial "+factorialNew(1));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

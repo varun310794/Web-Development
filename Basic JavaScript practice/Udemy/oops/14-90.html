@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<script>
+			function blogpost(title,text){
+			this.title=title;
+			this.text=text;
+			this.addCategory=addCategory;
+			this.displayBlogPost=displayBlogPost;
+			}
+			
+			function addCategory(category){
+				this.category=category;
+			}
+			
+			function displayBlogPost(){
+			document.write(this.title);
+			document.write(this.text);
+			document.write(this.category);
+			}
+			
+			var bp1=new blogpost("jquery", "Makes js easier to use");
+			bp1.addCategory("UI technology");
+			bp1.displayBlogPost();
+			
+			var person = {
+				name: 'Varun',
+				age:23
+			}
+			
+			document.write(person.name);
+			document.write(person.age);
+			</script>  
+	</head>
+	
+	<body>
+		
+	</body>
+ </html>
